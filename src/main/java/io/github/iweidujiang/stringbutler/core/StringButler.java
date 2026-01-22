@@ -21,7 +21,7 @@ public class StringButler {
     private final String originalValue;
     private String currentValue;
     private boolean isValid = true;
-    private StringBuilder validationErrors = new StringBuilder();
+    private final StringBuilder validationErrors = new StringBuilder();
 
     /**
      * 私有构造器，强制使用工厂方法
