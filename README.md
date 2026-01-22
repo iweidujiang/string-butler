@@ -5,6 +5,10 @@
 
 StringButler是一个强大、灵活且易于使用的Java字符串工具库。它提供链式API，让字符串处理变得直观、优雅。
 
+<img width="612" height="537" alt="架构图-水印" src="https://github.com/user-attachments/assets/f3fb1161-e557-4eff-ae5f-13815931cd44" />
+
+
+
 ## ✨ 特性
 
 - 🚀 **链式API**：流畅的接口设计，像说话一样写代码
