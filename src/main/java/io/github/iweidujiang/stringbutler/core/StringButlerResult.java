@@ -94,6 +94,16 @@ public class StringButlerResult {
     }
 
     /**
+     * 获取值或默认值（仅基于null状态，不考虑验证状态）
+     *
+     * @param defaultValue 默认值
+     * @return 如果值不为null，则返回值，否则返回默认值
+     */
+    public String getValueIfNotNullOr(String defaultValue) {
+        return value != null ? value : defaultValue;
+    }
+
+    /**
      * 获取 Optional 包装的值
      *
      * @return Optional包装的字符串

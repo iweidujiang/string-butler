@@ -182,10 +182,25 @@ public class StringButler {
      * 获取值或默认值
      *
      * @param defaultValue 默认值
-     * @return 如果当前值不为null且非空，则返回当前值，否则返回默认值
+     * @return 如果当前值有效且不为空白，则返回当前值，否则返回默认值
      */
     public String getValueOr(String defaultValue) {
-        return (currentValue != null && !currentValue.trim().isEmpty()) ? currentValue : defaultValue;
+        // 修改：同时检查验证状态和空白状态
+        // https://github.com/iweidujiang/string-butler/issues/1
+        return (isValid() && currentValue != null && !currentValue.trim().isEmpty())
+                ? currentValue : defaultValue;
+    }
+
+    /**
+     * 获取值或默认值（仅基于空白状态，不考虑验证状态）
+     *
+     * @param defaultValue 默认值
+     * @return 如果当前值不为 null且非空，则返回当前值，否则返回默认值
+     */
+    public String getValueIfNotBlankOr(String defaultValue) {
+        // 新增：提供仅基于空白状态的检查
+        return (currentValue != null && !currentValue.trim().isEmpty())
+                ? currentValue : defaultValue;
     }
 
     /**
