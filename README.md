@@ -402,7 +402,7 @@ mvn package
 
 ## 📞 支持
 
-- 提交 Issue: [GitHub Issues
+- 提交 Issue: [GitHub Issues](https://github.com/iweidujiang/string-butler/issues)
 
 - 邮件联系: iyouzh@163.com
 
