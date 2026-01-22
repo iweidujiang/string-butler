@@ -1,8 +1,9 @@
-package io.github.iweidujiang.stringbutler.transformation;
+package io.github.iweidujiang.stringbutler.chains;
 
 import io.github.iweidujiang.stringbutler.core.StringButler;
 import io.github.iweidujiang.stringbutler.enums.MaskStrategy;
 import io.github.iweidujiang.stringbutler.enums.TrimStrategy;
+import io.github.iweidujiang.stringbutler.transformation.*;
 
 import java.util.ArrayList;
 import java.util.List;

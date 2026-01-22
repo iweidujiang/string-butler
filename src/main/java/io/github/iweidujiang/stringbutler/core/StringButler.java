@@ -1,8 +1,8 @@
 package io.github.iweidujiang.stringbutler.core;
 
 import io.github.iweidujiang.stringbutler.enums.BlankStrategy;
-import io.github.iweidujiang.stringbutler.transformation.TransformationChain;
-import io.github.iweidujiang.stringbutler.validation.ValidationChain;
+import io.github.iweidujiang.stringbutler.chains.TransformationChain;
+import io.github.iweidujiang.stringbutler.chains.ValidationChain;
 
 import java.util.Optional;
 import java.util.function.Supplier;

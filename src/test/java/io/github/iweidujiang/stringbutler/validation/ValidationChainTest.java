@@ -1,5 +1,6 @@
 package io.github.iweidujiang.stringbutler.validation;
 
+import io.github.iweidujiang.stringbutler.chains.ValidationChain;
 import io.github.iweidujiang.stringbutler.core.StringButler;
 import org.junit.jupiter.api.Test;
 
