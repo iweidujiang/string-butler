@@ -396,7 +396,7 @@ mvn package
 
 ## 📄 许可证
 
-本项目基于 Apache License 2.0 许可证 - 查看 [LICENSE](https://license/) 文件了解详情。
+本项目基于 Apache License 2.0 许可证 - 查看 [LICENSE](https://www.apache.org/licenses/LICENSE-2.0.txt) 文件了解详情。
 
 
 
@@ -407,6 +407,7 @@ mvn package
 - 邮件联系: iyouzh@163.com
 
 - 微信公众号：苏渡苇
+<img width="595" height="595" alt="wechat" src="https://github.com/user-attachments/assets/ec6ce376-a8c6-4168-852b-f544c98a4773" />
 
   
 
