@@ -361,17 +361,9 @@ mvn surefire-report:report
 
 测试报告：
 
+<img width="912" height="584" alt="测试报告-水印" src="https://github.com/user-attachments/assets/68cd9a8e-ee0e-41cd-af95-4c9d49b6e530" />
 
 
-## 📊 性能对比
-
-处理100万条字符串的性能对比：
-
-| 操作类型        | 传统方式 | StringButler | 提升 |
-| :-------------- | :------- | :----------- | :--- |
-| 空值检查+去空格 | 120ms    | 85ms         | +29% |
-| 格式验证+转换   | 450ms    | 310ms        | +31% |
-| 复杂链式操作    | N/A      | 520ms        | -    |
 
 ## 🤝 贡献指南
 
@@ -383,22 +375,7 @@ mvn surefire-report:report
 4. 推送分支 (`git push origin feature/AmazingFeature`)
 5. 开启 Pull Request
 
-### 开发环境设置
 
-
-
-```bash
-# 克隆项目
-git clone https://github.com/iweidujiang/string-butler.git
-cd string-butler
-
-# 编译和测试
-mvn clean compile
-mvn test
-
-# 打包
-mvn package
-```
 
 
 
