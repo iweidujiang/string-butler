@@ -1,6 +1,8 @@
 package io.github.iweidujiang.stringbutler.core;
 
 import io.github.iweidujiang.stringbutler.enums.BlankStrategy;
+import io.github.iweidujiang.stringbutler.transformation.TransformationChain;
+import io.github.iweidujiang.stringbutler.validation.ValidationChain;
 
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -39,6 +41,24 @@ public class StringButler {
      */
     public static StringButler of(String value) {
         return new StringButler(value);
+    }
+
+    /**
+     * 获取验证链
+     *
+     * @return 验证链实例
+     */
+    public ValidationChain validate() {
+        return new ValidationChain(this);
+    }
+
+    /**
+     * 获取转换链
+     *
+     * @return 转换链实例
+     */
+    public TransformationChain transform() {
+        return new TransformationChain(this);
     }
 
     /**
@@ -216,7 +236,7 @@ public class StringButler {
      *
      * @param error 错误信息
      */
-    void addValidationError(String error) {
+    public void addValidationError(String error) {
         this.isValid = false;
         if (validationErrors.length() > 0) {
             validationErrors.append("; ");
@@ -229,7 +249,7 @@ public class StringButler {
      *
      * @param value 新值
      */
-    void setCurrentValue(String value) {
+    public void setCurrentValue(String value) {
         this.currentValue = value;
     }
 
