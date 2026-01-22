@@ -7,7 +7,7 @@ StringButler是一个强大、灵活且易于使用的Java字符串工具库。�
 
 <img width="612" height="537" alt="架构图-水印" src="https://github.com/user-attachments/assets/f3fb1161-e557-4eff-ae5f-13815931cd44" />
 
-## 写在前面
+## 📣 写在前面
 
 **本项目的真正意图并非让你真的使用这个工具（虽然它确实好用），而是希望通过这个项目与你一起探讨优秀的软件设计、Java技术点的应用，以及如何写出优雅的代码。我会出系列博文来和大家一起探讨。**
 
