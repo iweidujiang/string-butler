@@ -104,6 +104,85 @@ public class ValidationChain {
     }
 
     /**
+     * 添加URL格式验证
+     *
+     * @return 当前验证链实例
+     */
+    public ValidationChain url() {
+        return addRule(new UrlRule());
+    }
+
+    /**
+     * 添加URL格式验证（自定义错误信息）
+     *
+     * @param errorMessage 错误信息
+     * @return 当前验证链实例
+     */
+    public ValidationChain url(String errorMessage) {
+        return addRule(new UrlRule(errorMessage));
+    }
+
+    /**
+     * 添加正则表达式验证
+     *
+     * @param pattern 正则表达式
+     * @return 当前验证链实例
+     */
+    public ValidationChain matches(String pattern) {
+        return addRule(new PatternRule(pattern));
+    }
+
+    /**
+     * 添加正则表达式验证（自定义错误信息）
+     *
+     * @param pattern 正则表达式
+     * @param errorMessage 错误信息
+     * @return 当前验证链实例
+     */
+    public ValidationChain matches(String pattern, String errorMessage) {
+        return addRule(new PatternRule(pattern, errorMessage));
+    }
+
+    /**
+     * 添加数字验证
+     *
+     * @param allowDecimal 是否允许小数
+     * @return 当前验证链实例
+     */
+    public ValidationChain numeric(boolean allowDecimal) {
+        return addRule(new NumericRule(allowDecimal));
+    }
+
+    /**
+     * 添加数字验证（自定义错误信息）
+     *
+     * @param allowDecimal 是否允许小数
+     * @param errorMessage 错误信息
+     * @return 当前验证链实例
+     */
+    public ValidationChain numeric(boolean allowDecimal, String errorMessage) {
+        return addRule(new NumericRule(allowDecimal, errorMessage));
+    }
+
+    /**
+     * 添加整数验证
+     *
+     * @return 当前验证链实例
+     */
+    public ValidationChain integer() {
+        return numeric(false);
+    }
+
+    /**
+     * 添加小数验证
+     *
+     * @return 当前验证链实例
+     */
+    public ValidationChain decimal() {
+        return numeric(true);
+    }
+
+    /**
      * 设置是否在第一次验证失败时停止
      *
      * @param stopOnFirstFailure 是否在第一次失败时停止
